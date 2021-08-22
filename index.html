@@ -1,27 +1,156 @@
 <html>
     <head>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
             <style type="text/css">
                 .header {
                     width: 100%;
-                    height: 100px;
-                    background: black;
+                    background: rgb(50,50,50);
                     text-align: center;
+                }
+
+                body {
+                    background-color: rgb(20,20,30);
+                    padding: 0px;
+                    font-family: 'Roboto', sans-serif;
+                    margin: 0px;
                 }
 
                 .disclaimer {
                     width: 500px;
                     height: 550px;
-                    background: red;
-                    float: right;
+                    background: orange;
                     padding: 20px;
                 }
-                </style>
+
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color: #333;
+                    width: 100%;
+                }
+
+                li {
+                    float: left;
+                }
+
+                li a {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+
+                li a:hover {
+                    background-color: orange;
+                }
+
+                .menuText a:hover {
+                    color: black;
+                }
+
+                .active {
+                    background-color: orange;
+                }
+
+                .removePadding {
+                    padding-left: 0px;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    margin: 0px;
+                    float: right;
+                    padding-right: 8px;
+                    
+                }
+
+                .content {
+                    max-width: 1000px;
+                    margin: auto;
+                }
+
+                .container {
+                    position: relative;
+                }
+
+                .image {
+                    display: block;
+                    height: auto;
+                }
+
+                .overlay {
+                    position: absolute; 
+                    bottom: 0;
+                    background: rgba(0, 0, 0, 0.7); /* Black see-through */
+                    color: #f1f1f1; 
+                    width: 100%;
+                    transition: .5s ease;
+                    opacity:1;
+                    color: white;
+                    font-size: 20px;
+                    height: 100%;
+                    text-align: center;
+                }
+
+                .container:hover .overlay {
+                    opacity: 0;
+                }
+                
+            </style>
+            <title>Thuchuk-Thuchuk!</title>
+            <meta charset="UTF-8">
     </head>
-    <body background = "./Resume_Updated.jpeg">
-        <div class="header"><h1 style="color:white; "> Enjoy Thuchuk Thuchuk </h1></div>
-        <div class="disclaimer">
-                <h1 style="color:white; "> We give best thuchuk thuchuk in town.<br/><hr/> Avin's moneyback gaurantee </h1>
-                <iframe src="https://giphy.com/embed/26xBJESzSA2hd6wiA" width="480" height="361" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-            </div>
+    <body>
+        <ul class="menuText">
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <div class="removePadding"><h1 style="color:white; padding: 0px; margin: 0px;"> &#128073; &#128076; Thuchuk Thuchuk</h1></div>
+        </ul>
+        <table class="content">
+            <tr>
+                <td>
+                    <div class="container">
+                        <img src="pic1.png" class="image" width="400">
+                        <div class="overlay"></div>
+                    </div>
+                </td>
+                <td>
+                        <div class="disclaimer">
+                                <h1 style="color:black;"> We give best thuchuk thuchuk in town.<br/><hr/> Avin's moneyback gaurantee </h1>
+                                <iframe src="https://giphy.com/embed/26xBJESzSA2hd6wiA" width="480" height="361" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                        </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container">
+                        <img src="pic2.png" class="image" width="400">
+                        <div class="overlay"></div>
+                    </div>
+                </td>
+                <td>
+                        <div class="disclaimer">
+                                <iframe src="https://giphy.com/embed/K6bKs7mUXuQrAQbKhG" width="480" height="400" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                        </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container">
+                        <img src="pic3.png" class="image" width="400">
+                        <div class="overlay"></div>
+                    </div>
+                </td>
+                <td>
+                    <div class="disclaimer">
+                        <img src="meme1.png" class="image" width="500">
+                    </div>
+                </td>
+            </tr>
+        </table>
     </body>
 </html>
